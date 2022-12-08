@@ -1,0 +1,13 @@
+{
+  "name": "@jokerwon/shared",
+  "version": "0.0.4",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

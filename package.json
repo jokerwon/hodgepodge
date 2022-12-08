@@ -1,0 +1,38 @@
+{
+  "description": "",
+  "keywords": [],
+  "scripts": {
+    "build": "pnpm -F @jokerwon/* run build",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
+    "change": "changeset",
+    "change:version": "GITHUB_TOKEN=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 changeset version",
+    "publish": "pnpm build && pnpm publish:only",
+    "publish:only": "changeset publish",
+    "test": "vitest test",
+    "coverage": "vitest run --coverage",
+    "docs:dev": "vitepress dev packages",
+    "docs:build": "vitepress build packages"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.7",
+    "@changesets/cli": "^2.25.2",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@types/node": "^18.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "@vitest/coverage-c8": "^0.25.3",
+    "commitlint": "^17.3.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3",
+    "vitepress": "1.0.0-alpha.29",
+    "vitest": "^0.25.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@jokerwon/cli",
+  "version": "0.0.4",
+  "description": "",
+  "bin": {
+    "jk": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jokerwon/shared": "workspace:*"
+  }
+}
