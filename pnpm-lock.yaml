@@ -44,9 +44,15 @@ importers:
 
   packages/cli:
     specifiers:
-      '@jokerwon/shared': workspace:^0.0.1
+      '@jokerwon/shared': workspace:*
     dependencies:
       '@jokerwon/shared': link:../shared
+
+  packages/shared:
+    specifiers: {}
+
+  packages/utils:
+    specifiers: {}
 
 packages:
 

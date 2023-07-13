@@ -1,13 +1,14 @@
 {
   "name": "@jokerwon/cli",
-  "version": "0.0.4",
+  "version": "0.0.0",
   "description": "",
   "bin": {
     "jk": "./bin/index.js"
   },
-  "scripts": {
-    "build": "tsup"
-  },
+  "files": [
+    "bin",
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
