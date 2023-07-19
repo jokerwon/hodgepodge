@@ -1,3 +1,15 @@
-import { sum } from '@jokerwon/shared';
+import cac from 'cac';
+import pkg from '../package.json';
+import { createProject } from './command';
 
-console.log('sum(1, 2): ', sum(1, 2));
+const { version } = pkg;
+
+const cli = cac();
+cli
+  .command('new [project-name]', 'create a new project')
+  .alias('create')
+  .action(async projectName => {
+    createProject(projectName);
+  });
+
+cli.help().version(version).parse();

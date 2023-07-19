@@ -13,6 +13,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jokerwon/shared": "workspace:*"
+    "@jokerwon/shared": "workspace:*",
+    "@types/adm-zip": "^0.5.0",
+    "@types/cross-spawn": "^6.0.2",
+    "@types/inquirer": "^9.0.3",
+    "adm-zip": "^0.5.10",
+    "cac": "^6.7.14",
+    "cross-spawn": "^7.0.3",
+    "inquirer": "^9.2.8",
+    "kolorist": "^1.8.0",
+    "node-fetch": "^3.3.1",
+    "ora": "^6.3.1"
   }
 }
